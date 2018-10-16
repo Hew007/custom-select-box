@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Diy Select</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="main" class="main"></div>
+
+    <script src="index.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded",function(){
+            const select1 = new $Selector({
+                eleSelector:"#main",
+                options:[
+                    {name:"选项1",value:"0"},
+                    {name:"选项2",value:"1"},
+                    {name:"选项3",value:"2"}
+                ],
+                defaultText:"选项2"
+            });
+        })
+    </script>
+</body>
+</html>
